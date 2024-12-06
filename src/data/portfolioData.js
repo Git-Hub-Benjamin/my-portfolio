@@ -10,7 +10,7 @@ export const projects = [
     },
     {
         title: "FAT16 Driver",
-        description: "Implementation of a FAT16 filesystem driver, enabling reading of files",
+        description: "Implementation of a FAT16 filesystem driver, enabling reading of files. The github link will direct you to the fat16.c driver implementation that I wrote. It runs on PEACHOS as part of a kernel devlopment course I have taken by Daniel McCarthy.",
         technologies: ["C++", "File Systems", "OS Development"],
         githubLink: "https://github.com/Git-Hub-Benjamin/fat16Driver/blob/main/src/fs/fat/fat16.c"
     },
