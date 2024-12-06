@@ -18,7 +18,7 @@ const AboutMe = () => {
           <div className="md:w-1/3 flex items-center">
             <div className="rounded-lg overflow-hidden shadow-lg max-w-xs mx-auto">
               <img 
-                src="/profile.jpg" 
+                src="/my-portfolio/profile.jpg" 
                 alt="Profile" 
                 className="w-full h-auto object-cover"
               />

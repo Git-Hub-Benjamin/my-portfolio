@@ -11,7 +11,7 @@ const Navbar = () => {
           <div className="flex items-center gap-3 group">
             <img 
               className="w-8 h-8 transition-transform duration-300 group-hover:rotate-180" 
-              src="/chip-microchip.svg" 
+              src="/my-portfolio/chip-microchip.svg" 
               alt="chip" 
             />
             <span className="text-gray-800 font-bold text-lg relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-600 after:left-0 after:bottom-0 after:transition-all after:duration-300 group-hover:after:w-full">
