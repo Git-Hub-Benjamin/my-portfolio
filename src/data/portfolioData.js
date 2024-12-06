@@ -24,7 +24,7 @@ export const projects = [
         title: "Full Stack Authentication System",
         description: "Modern authentication system with animated UI components and secure backend implementation. Features include user registration, login functionality, and protected routes using JWT authentication.",
         technologies: ["React", "Node.js", "MongoDB", "Express", "JWT", "Framer Motion", "Tailwind CSS"],
-        githubLink: "https://github.com/Git-Hub-Benjamin/routing-webpage/tree/main/server/config"
+        githubLink: "https://github.com/Git-Hub-Benjamin/routing-webpage/tree/main"
     }
 ];
 
