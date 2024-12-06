@@ -4,7 +4,7 @@ export const projects = [
     {
         title: "Lexer/Preprocessor",
         description: "A custom lexer and preprocessor implementation that handles tokenization and preprocessing of source code",
-        technologies: ["C++", "Lexing", "Basic Compiler Design", "Assembly"],
+        technologies: ["C", "Lexing", "Basic Compiler Design", "Assembly"],
         githubLink: "https://github.com/Git-Hub-Benjamin/flexer",
         demoLink: "https://github.com/Git-Hub-Benjamin/flexer/blob/main/README.md"
     },
