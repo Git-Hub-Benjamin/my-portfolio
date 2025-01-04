@@ -2,39 +2,59 @@ import { Code2, TreePine, Bike, Wrench, GraduationCap, Apple } from 'lucide-reac
 
 export const projects = [
     {
-        title: "Lexer/Preprocessor",
-        description: "A custom lexer and preprocessor implementation that handles tokenization and preprocessing of source code",
-        technologies: ["C", "Lexing", "Basic Compiler Design", "Assembly"],
-        githubLink: "https://github.com/Git-Hub-Benjamin/flexer",
-        demoLink: "https://github.com/Git-Hub-Benjamin/flexer/blob/main/README.md"
-    },
-    {
         title: "FAT16 Driver",
-        description: "Implementation of a FAT16 filesystem driver, enabling reading of files. The github link will direct you to the fat16.c driver implementation that I wrote. It runs on PEACHOS as part of a kernel devlopment course I have taken by Daniel McCarthy.",
+        description: "Implementation of a FAT16 filesystem driver, enabling reading of files. The github link will direct you to the fat16.c driver implementation that I wrote. It runs on PEACHOS as part of a kernel development course I have taken by Daniel McCarthy.",
         technologies: ["C++", "File Systems", "OS Development"],
-        githubLink: "https://github.com/Git-Hub-Benjamin/fat16Driver/blob/main/src/fs/fat/fat16.c"
+        githubLink: "https://github.com/Git-Hub-Benjamin/fat16Driver/blob/main/src/fs/fat/fat16.c",
+        demoLink: "https://github.com/Git-Hub-Benjamin/fat16Driver/tree/main/src/fs/fat",
+        demoType: "code",
+        demoDescription: "Explore the implementation details and source code"
     },
     {
         title: "Chess Game",
-        description: "A functional chess game implementation with move validation and game state management, A work in progress. Works in the terminal on linux, I am working on bringing it to windows and adding online functionality.",
+        description: "A functional chess game implementation with move validation and game state management. Currently works in the terminal on Linux, with ongoing development for Windows support and online functionality. Features include complete chess rules implementation and a command-line interface.",
         technologies: ["C++", "Game Development", "Object-Oriented Design"],
-        githubLink: "https://github.com/Git-Hub-Benjamin/Chess"
+        githubLink: "https://github.com/Git-Hub-Benjamin/Chess",
+        demoLink: "https://github.com/Git-Hub-Benjamin/Chess#readme",
+        demoType: "documentation",
+        demoDescription: "View game features and implementation details"
+    },
+    {
+        title: "Lexer/Preprocessor",
+        description: "A custom lexer and preprocessor implementation that handles tokenization and preprocessing of source code. This project demonstrates fundamental concepts in compiler design and text processing.",
+        technologies: ["C", "Lexing", "Basic Compiler Design", "Assembly"],
+        githubLink: "https://github.com/Git-Hub-Benjamin/flexer",
+        demoLink: "https://github.com/Git-Hub-Benjamin/flexer/blob/main/README.md",
+        demoType: "documentation",
+        demoDescription: "View detailed implementation and usage documentation"
     },
     {
         title: "Full Stack Authentication System",
-        description: "Modern authentication system with animated UI components and secure backend implementation. Features include user registration, login functionality, and protected routes using JWT authentication.",
+        description: "Modern authentication system with animated UI components and secure backend implementation. Features include user registration, login functionality, and protected routes using JWT authentication. The project showcases modern web development practices and security implementations.",
         technologies: ["React", "Node.js", "MongoDB", "Express", "JWT", "Framer Motion", "Tailwind CSS"],
-        githubLink: "https://github.com/Git-Hub-Benjamin/routing-webpage/tree/main"
+        githubLink: "https://github.com/Git-Hub-Benjamin/routing-webpage/tree/main",
+        demoLink: "https://github.com/Git-Hub-Benjamin/routing-webpage/tree/main#readme",
+        demoType: "documentation",
+        demoDescription: "Explore the authentication system features and implementation"
+    },
+    {
+        title: "Personal Portfolio Website",
+        description: "A modern, responsive portfolio website built with React and Tailwind CSS. Features include a dynamic project showcase, responsive design, smooth scrolling navigation, and animated UI components. Implements clean code practices with reusable React components and efficient state management.",
+        technologies: ["React", "Tailwind CSS", "JavaScript", "Node.js", "Responsive Design", "Git", "Component Design", "HTML5"],
+        githubLink: "https://github.com/Git-Hub-Benjamin/portfolio",
+        demoLink: "https://github.com/Git-Hub-Benjamin/portfolio#readme",
+        demoType: "code",
+        demoDescription: "The react code for this website!"
     }
 ];
 
 
 export const contentData = [
-   {
-       icon: Code2,
-       iconColor: "text-blue-600",
-       title: "Low Level Development",
-       description: "Self-taught programmer since 2022, specializing in C/C++. I am specifically interested in systems programming, kernel development, and OS drivers."
+    {
+        icon: Code2,
+        iconColor: "text-blue-600",
+        title: "Low Level Development",
+        description: "Self-taught programmer since 2022, specializing in C/C++. I am specifically interested in systems programming, kernel development, and OS drivers."
    },
    {
        icon: GraduationCap,

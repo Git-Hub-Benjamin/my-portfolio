@@ -17,11 +17,18 @@ const Navbar = () => {
             <span className="text-gray-800 font-bold text-lg relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-600 after:left-0 after:bottom-0 after:transition-all after:duration-300 group-hover:after:w-full">
               Benjamin Funk
             </span>
+            <div className="flex items-center gap-1.5 ml-2">
+              <div className="relative flex items-center justify-center">
+                <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                <div className="absolute w-2 h-2 bg-green-500 rounded-full animate-ping opacity-40"></div>
+              </div>
+              <span className="text-xs text-gray-600">Available</span>
             </div>
+          </div>
           {/* Desktop navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#projects" className="font-semibold text-black-600 hover:text-blue-600 transition-colors">Projects</a>
             <a href="#aboutme" className="font-semibold text-black-600 hover:text-blue-600 transition-colors">About me</a>
+            <a href="#projects" className="font-semibold text-black-600 hover:text-blue-600 transition-colors">Projects</a>
             <a href="#contact" className="font-semibold text-black-600 hover:text-blue-600 transition-colors">Contact</a>
           </div>
 
@@ -49,18 +56,18 @@ const Navbar = () => {
         <div className="md:hidden absolute top-16 inset-x-0 bg-white shadow-lg">
           <div className="flex flex-col space-y-4 px-4 py-6">
             <a 
-              href="#projects" 
-              onClick={() => setIsMenuOpen(false)}
-              className="text-gray-600 hover:text-blue-600 transition-colors text-center text-lg"
-            >
-              Projects
-            </a>
-            <a 
               href="#aboutme" 
               onClick={() => setIsMenuOpen(false)}
               className="text-gray-600 hover:text-blue-600 transition-colors text-center text-lg"
             >
               About me
+            </a>
+            <a 
+              href="#projects" 
+              onClick={() => setIsMenuOpen(false)}
+              className="text-gray-600 hover:text-blue-600 transition-colors text-center text-lg"
+            >
+              Projects
             </a>
             <a 
               href="#contact" 
