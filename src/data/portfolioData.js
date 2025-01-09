@@ -66,7 +66,7 @@ export const contentData = [
        icon: Bike,
        iconColor: "text-red-600",
        title: "Mountain Biking",
-       description: "Passionate mountain bike rider, I own a Commencal Meta HT Race hardtail. New to the sport in 2024 but already hooked on the trails."
+       description: "Passionate mountain bike rider, Just bought my first mountain bike; a hardtail. Although I am new to the sport in 2024 I am already hooked on the trails."
    },
    {
        icon: Wrench,

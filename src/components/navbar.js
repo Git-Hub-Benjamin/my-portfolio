@@ -18,6 +18,7 @@ const Navbar = () => {
               Benjamin Funk
             </span>
             <div className="flex items-center gap-1.5 ml-2">
+            <span className="text-xs text-gray-600">Fairfield County, CT</span>
               <div className="relative flex items-center justify-center">
                 <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                 <div className="absolute w-2 h-2 bg-green-500 rounded-full animate-ping opacity-40"></div>

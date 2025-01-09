@@ -15,7 +15,7 @@ function App() {
         
         <section id="projects" className="p-4 bg-gray-100 scroll-mt-16">
           <div className="flex justify-center mb-4">
-            <h2 className="text-2xl font-bold">Projects</h2>
+            <h2 className="text-3xl font-bold">Projects</h2>
           </div>
           <div className="max-w-6xl mx-auto">
             {projects.map((project, index) => (
