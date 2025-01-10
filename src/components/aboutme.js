@@ -6,7 +6,7 @@ import { contentData } from '../data/portfolioData';
 const AboutMe = () => {
   const images = [
     { src: "/my-portfolio/profile.jpg", alt: "Profile" },
-    { src: "/my-portfolio/bike-filler.jpg", alt: "Bike"},
+    { src: "/my-portfolio/bike-pfp-one.jpg", alt: "Bike"},
 
     // { src: "/my-portfolio/mountain-biking.jpg", alt: "Mountain Biking" },
     // { src: "/my-portfolio/coding.jpg", alt: "Coding" },
@@ -45,14 +45,14 @@ const AboutMe = () => {
         
         <div className="flex flex-col md:flex-row gap-8 items-center">
           {/* Left column with image carousel */}
-          <div className="md:w-1/3 flex flex-col justify-center">
+          <div className="w-full md:w-1/3 flex flex-col justify-center">
             <div className="relative rounded-lg overflow-hidden shadow-lg w-full max-w-xs mx-auto group">
               {/* Fixed aspect ratio container */}
-              <div className="aspect-[3/4] w-full">
+              <div className="relative aspect-[3/4] w-full">
                 <img 
                   src={images[currentImage].src}
                   alt={images[currentImage].alt}
-                  className="absolute w-full h-full object-cover transition-opacity duration-300"
+                  className="w-full h-full object-cover"
                 />
                 
                 {/* Navigation Arrows */}
@@ -74,28 +74,28 @@ const AboutMe = () => {
                     </button>
                   </>
                 )}
+
+                {/* Navigation Dots */}
+                {images.length > 1 && (
+                  <div className="absolute bottom-2 left-0 right-0 flex justify-center gap-1">
+                    {images.map((_, index) => (
+                      <button
+                        key={index}
+                        onClick={() => goToImage(index)}
+                        className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                          currentImage === index 
+                            ? 'bg-white scale-125' 
+                            : 'bg-white bg-opacity-50 hover:bg-opacity-75'
+                        }`}
+                        aria-label={`Go to image ${index + 1}`}
+                      />
+                    ))}
+                  </div>
+                )}
               </div>
-              
-              {/* Navigation Dots */}
-              {images.length > 1 && (
-                <div className="absolute bottom-2 left-0 right-0 flex justify-center gap-1">
-                  {images.map((_, index) => (
-                    <button
-                      key={index}
-                      onClick={() => goToImage(index)}
-                      className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                        currentImage === index 
-                          ? 'bg-white scale-125' 
-                          : 'bg-white bg-opacity-50 hover:bg-opacity-75'
-                      }`}
-                      aria-label={`Go to image ${index + 1}`}
-                    />
-                  ))}
-                </div>
-              )}
             </div>
           </div>
- 
+
           {/* Right column with content grid */}
           <div className="md:w-2/3">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -111,3 +111,43 @@ const AboutMe = () => {
 };
 
 export default AboutMe;
+
+
+/* <div className="md:w-2/3">
+  <div className="prose prose-lg max-w-none">
+    <p className="text-lg mb-6 text-gray-700 leading-relaxed">
+      I'm a self-taught programmer since 2022, with a strong focus on C/C++ and systems programming. 
+      My passion lies in low-level development, particularly in kernel development and OS drivers.
+    </p>
+    
+    <div className="space-y-8">
+      <div>
+        <h3 className="text-xl font-semibold mb-3 text-gray-900">Education & Future Plans</h3>
+        <p className="text-gray-700">
+          Currently studying at CTState, I'm on track to transfer to the University of Utah in 2025 
+          to pursue Computer Engineering. I graduated from Bethel High School in 2023 and am excited 
+          about the next chapter of my academic journey.
+        </p>
+      </div>
+
+      <div>
+        <h3 className="text-xl font-semibold mb-3 text-gray-900">Outdoor Enthusiasm</h3>
+        <p className="text-gray-700">
+          As an Eagle Scout, I have a deep appreciation for the outdoors. In 2024, I discovered my 
+          passion for mountain biking and recently purchased my first hardtail bike. When I'm not 
+          coding, you can find me exploring trails and seeking new adventures.
+        </p>
+      </div>
+
+      <div>
+        <h3 className="text-xl font-semibold mb-3 text-gray-900">Hands-on Experience</h3>
+        <p className="text-gray-700">
+          My background in woodworking has taught me the value of craftsmanship and attention to 
+          detail. This hands-on experience, combined with my two years of working with children at 
+          a daycare and as a swimming instructor, has shaped my approach to problem-solving and 
+          communication.
+        </p>
+      </div>
+    </div> 
+  </div> 
+</div>*/
