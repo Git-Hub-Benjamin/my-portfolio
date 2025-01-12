@@ -7,6 +7,10 @@ const AboutMe = () => {
   const images = [
     { src: "/my-portfolio/profile.jpg", alt: "Profile" },
     { src: "/my-portfolio/bike-pfp-one.jpg", alt: "Bike"},
+    { src: "/my-portfolio/eagle-project.png", alt: "Eagle Project"},
+    { src: "/my-portfolio/brother-ski.jpg", alt: "Skiing"},
+    { src: "/my-portfolio/eagle-project-leadership.jpg", alt: "Leader Eagle Project"}
+
 
     // { src: "/my-portfolio/mountain-biking.jpg", alt: "Mountain Biking" },
     // { src: "/my-portfolio/coding.jpg", alt: "Coding" },
