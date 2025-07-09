@@ -20,9 +20,9 @@ export const projects = [
         demoDescription: "View game features and implementation details"
     },
     {
-        title: "Lexer/Preprocessor",
-        description: "A custom lexer and preprocessor implementation that handles tokenization and preprocessing of source code. This project demonstrates fundamental concepts in compiler design and text processing.",
-        technologies: ["C", "Lexing", "Basic Compiler Design", "Assembly"],
+        title: "Custom Compiler Implementation: Multi-Stage C Language Processing Pipeline",
+        description: "A sophisticated compiler implementation that demonstrates fundamental concepts of language processing and system programming. This project features a hand-crafted lexer/tokenizer written in C, coupled with an assembly-based preprocessor and a robust C-implemented parser.",
+        technologies: ["C", "Compiler Design Principles", "Assembly"],
         githubLink: "https://github.com/Git-Hub-Benjamin/flexer",
         demoLink: "https://github.com/Git-Hub-Benjamin/flexer/blob/main/README.md",
         demoType: "documentation",
