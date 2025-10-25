@@ -1,4 +1,4 @@
-import { Code2, TreePine, Bike, Wrench, GraduationCap, Apple } from 'lucide-react';
+import { Code2, TreePine, GraduationCap, Apple } from 'lucide-react';
 
 export const projects = [
     {
@@ -29,11 +29,20 @@ export const projects = [
         demoDescription: "View detailed implementation and usage documentation"
     },
     {
+        title: "GoTogether – University Ride‑Sharing Platform",
+        description: "Cross-platform ride-sharing app for university students. Includes web (React + MUI) and mobile (Expo/React Native) clients, email verification, ride creation/search, join/approve flows, rate limiting, and notifications. Node/Express backend provides distance calculations and nearby-city search with robust filtering.",
+        technologies: ["React", "Material UI (MUI)", "React Native", "Expo", "Node.js", "Express", "JWT", "MongoDB", "Nodemailer", "Rate Limiting"],
+        githubLink: "https://github.com/Git-Hub-Benjamin/GoTogether", 
+        demoLink: "https://github.com/Git-Hub-Benjamin/GoTogether", 
+        demoType: "code",
+        demoDescription: "Run web client at http://localhost:3000, API at http://localhost:5000, and mobile via Expo tunnel."
+    },
+    {
         title: "Full Stack Authentication System",
         description: "Modern authentication system with animated UI components and secure backend implementation. Features include user registration, login functionality, and protected routes using JWT authentication. The project showcases modern web development practices and security implementations.",
         technologies: ["React", "Node.js", "MongoDB", "Express", "JWT", "Framer Motion", "Tailwind CSS"],
-        githubLink: "https://github.com/Git-Hub-Benjamin/routing-webpage/tree/main",
-        demoLink: "https://github.com/Git-Hub-Benjamin/routing-webpage/tree/main#readme",
+        githubLink: "https://github.com/Git-Hub-Benjamin/framer-goose",
+        demoLink: "https://github.com/Git-Hub-Benjamin/framer-goose#readme",
         demoType: "documentation",
         demoDescription: "Explore the authentication system features and implementation"
     },
@@ -45,7 +54,7 @@ export const projects = [
         demoLink: "https://github.com/Git-Hub-Benjamin/portfolio#readme",
         demoType: "code",
         demoDescription: "The react code for this website!"
-    }
+    },
 ];
 
 
@@ -53,37 +62,25 @@ export const contentData = [
     {
         icon: Code2,
         iconColor: "text-blue-600",
-        title: "Low Level Development",
-        description: "Self-taught programmer since 2022, specializing in C/C++. I am specifically interested in systems programming, kernel development, and OS drivers."
-   },
-   {
-       icon: GraduationCap,
-       iconColor: "text-purple-600",
-       title: "Education Journey",
-       description: "Currently at CTState, planning to transfer to University of Utah for Computer Engineering in 2025. Bethel High School graduate 2023."
-   },
-   {
-       icon: Bike,
-       iconColor: "text-red-600",
-       title: "Mountain Biking",
-       description: "Passionate mountain bike rider, Just bought my first mountain bike; a hardtail. Although I am new to the sport in 2024 I am already hooked on the trails."
-   },
-   {
-       icon: Wrench,
-       iconColor: "text-gray-600",
-       title: "Woodworking",
-       description: "Hands-on craftsman experienced in building and construction. Love working with tools and creating things from scratch."
-   },
-   {
-       icon: TreePine,
-       iconColor: "text-green-600",
-       title: "Outdoor Adventures",
-       description: "Avid camper and outdoor enthusiast. As an eagle scout I love exploring nature and spending time outside."
-   },
-   {
-        icon: Apple, 
+        title: "My areas of interest",
+        description: "Self-taught programmer since 2022, specializing in C/C++. My passion lies in low-level development, particularly in systems programming, kernel development, and cybersecurity."
+    },
+    {
+        icon: GraduationCap,
+        iconColor: "text-purple-600",
+        title: "Education Journey",
+        description: "Currently pursuing a Bachelor's degree in Computer Engineering with a minor in Mathematics at Utah State University. I hold an Associate of Science from CTState Community College."
+    },
+    {
+        icon: TreePine,
+        iconColor: "text-green-600",
+        title: "Outdoor Adventures",
+        description: "An Eagle Scout and outdoor enthusiast who loves exploring nature and spending time outside."
+    },
+    {
+        icon: Apple,
         iconColor: "text-pink-600",
-        title: "Working with Kids",
-        description: "I've spent the past two years working with kids - both at a daycare and teaching swimming lessons."
+        title: "Current involvement",
+        description: "I'm involved in the Cyber Security, Free Software and Linux, and Game Development clubs. I am also currently working on obtaining my CompTIA Security+ certification."
     }
 ];
