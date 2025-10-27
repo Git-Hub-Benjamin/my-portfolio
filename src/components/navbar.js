@@ -28,9 +28,18 @@ const Navbar = () => {
           </div>
           {/* Desktop navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#aboutme" className="font-semibold text-black-600 hover:text-blue-600 transition-colors">About me</a>
-            <a href="#projects" className="font-semibold text-black-600 hover:text-blue-600 transition-colors">Projects</a>
-            <a href="#contact" className="font-semibold text-black-600 hover:text-blue-600 transition-colors">Contact</a>
+            <a href="#aboutme" className="text-gray-600 hover:text-blue-600 transition-colors">About me</a>
+            <a href="#projects" className="text-gray-600 hover:text-blue-600 transition-colors">Projects</a>
+            <a href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
+            <div className="w-px h-6 bg-gray-300"></div>
+            <a 
+              href="https://docs.google.com/document/d/12Dl7z8qoYhcQiRwOKN8NY3qQ0Uau6RK2/edit?usp=sharing&ouid=117323137334220650206&rtpof=true&sd=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-blue-600 transition-colors"
+            >
+              Resume
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -76,6 +85,16 @@ const Navbar = () => {
               className="text-gray-600 hover:text-blue-600 transition-colors text-center text-lg"
             >
               Contact
+            </a>
+            <div className="h-px bg-gray-300 my-2"></div>
+            <a 
+              href="https://docs.google.com/document/d/12Dl7z8qoYhcQiRwOKN8NY3qQ0Uau6RK2/edit?usp=sharing&ouid=117323137334220650206&rtpof=true&sd=true"
+              onClick={() => setIsMenuOpen(false)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-blue-600 transition-colors text-center text-lg"
+            >
+              Resume
             </a>
           </div>
         </div>
